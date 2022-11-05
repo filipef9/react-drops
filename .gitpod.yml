@@ -1,0 +1,18 @@
+image:
+  file: .gitpod.Dockerfile
+
+vscode:
+  extensions:
+    - wakatime.vscode-wakatime
+    - johnpapa.winteriscoming
+    - vscode-icons-team.vscode-icons
+    - esbenp.prettier-vscode
+    - naumovs.color-highlight
+    - dsznajder.es7-react-js-snippets
+    - asciidoctor.asciidoctor-vscode
+    - jpoissonnier.vscode-styled-components
+
+ports:
+  - port: 3000 # react
+    visibility: public
+    onOpen: open-preview
