@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Type the onClick event of an element in React (TypeScript)
+
+Article URL: https://bobbyhadz.com/blog/typescript-react-onclick-event-type
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
