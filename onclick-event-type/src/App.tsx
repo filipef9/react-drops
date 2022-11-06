@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+export const App = () => {
+  const handleClickButton = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    console.log('target (button)', event.target);
+    console.log('target (button)', event.currentTarget);
+  };
+
+  const handleClickDiv = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    console.log('target (div)', event.target)
+    console.log('currentTarget (div)', event.currentTarget)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>      
+      {/* 
+        Write onClick event inline and hover over the 'event' parameter with your mouse
+        to get its type.
+
+        <button onClick={event => console.log(event)}>Click</button>
+        <div onClick={event => console.log(event)}>Click</button>
+      */}
+
+      <button onClick={handleClickButton}>Click</button>
+      <div onClick={handleClickDiv}>Click</div>
     </div>
   );
-}
-
-export default App;
+};
